@@ -1,0 +1,178 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body {
+  margin: 0;
+}
+
+.quiz-wrap {
+  background: url(../image/bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quiz {
+  margin: 50px auto;
+  max-width: 1140px;
+  padding: 60px 40px;
+  background: #ffffff7d;
+  border-radius: 30px;
+  padding: 60px 40px;
+}
+
+h1 {
+  font: 800 44px / 32px 'Poiret One', cursive;
+  margin: 40px 0;
+}
+
+.quiz button {
+  font-family: 'Poiret One', cursive;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #00afaa;
+  border: none;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.question-title {
+  font: 600 30px / 32px 'Poiret One', cursive;
+  margin-bottom: 20px;
+}
+
+.quiz-text {
+  font: 600 22px / 32px 'Poiret One', cursive;
+}
+
+.question-answer input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.question-answer input+label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: 600 21px / 32px 'Poiret One', cursive;
+}
+
+.question-answer input+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.question-answer input:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.question-answer input:focus+label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.question-answer input:checked+label::before {
+  border-color: rgb(0, 175, 170);
+  background-color: rgb(0, 175, 170);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resalt-image {
+  width: 130px;
+}
+
+
+.quiz {
+  position: relative;
+}
+
+.quiz::before {
+  content: '';
+    position: absolute;
+    width: 223px;
+    height: 200px;
+    right: 30px;
+    bottom: 0;
+    background: url(../image/fleep.png) no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(-35deg);
+        -ms-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+}
+
+.sun {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  z-index: 1;
+}
+
+.ship-wrap {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+.ship {
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  right: 50px;
+  position: absolute;
+  /* background: url(../image/ship.png) no-repeat;
+  background-size: contain; */
+
+}
